@@ -99,7 +99,7 @@
 						<div id="location">M.I.S</div>
 
 						<div class="button">
-							<button type="submit">Item Retrieved</button>
+							<button type="submit" onclick="retrieveConfirmation()">Item Retrieved</button>
 						</div>
 						
                     </section>
@@ -107,6 +107,12 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup" id="retrieve-options">
+        <h2>Are you sure this item has been retrieved to the rightful owner?</h2>
+        <button onclick="location.href='#'">Yes</button>
+        <button onclick="location.href='#'">No</button>
+    </div>
 
     <script>
         
@@ -116,6 +122,17 @@
         menuIcn.addEventListener("click", () => {
         nav.classList.toggle("navclose");
         })
+
+		function retrieveConfirmation() {
+        var retrieveContainer = document.querySelector(".main-container");
+        var popup = document.getElementById("retrieve-options");
+
+        // Add a blur class to the login container
+        retrieveContainer.classList.add("blur");
+
+        popup.style.display = "block";
+        
+    	}
     </script>
 </body>
 </html>
