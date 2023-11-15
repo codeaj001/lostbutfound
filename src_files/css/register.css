@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CDD8E9;
+}
+::selection{
+    color: #fff;
+    background: #6C71DD;
+}
+.container {
+    margin: 100px 0px;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(92, 97, 217, 0.90) 47.73%, rgba(103, 99, 153, 0.54) 100%);
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.wrapper header {
+    text-align: center;
+    color: #F1EEEE;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 50px 0;
+}
+.wrapper form {
+    margin-top: 40px 0;
+    text-align: center;
+}
+form .field{
+    width: 80%;
+    margin: 45px auto;
+}
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+}
+form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    color: #e1d9ec;
+    border-radius: 5px;
+    border: 1px solid #e1d9ec;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.input-area .icon{
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+}
+form input::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+
+form .pass-txt{
+    text-align: left;
+    margin-top: -10px;
+}
+
+.wrapper a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+form input[type="submit"]{
+    width: 35%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #6C71DD;
+    padding: 0;
+    font-weight: bold;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+.altButtons {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.sign-txt{
+    color: #fff;
+}
+.gender .input-area {
+    text-align: left;
+    color: #fff;
+}
+.gender-option, .gender {
+    display:flex;
+    align-items: center;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 0;
+    }
+}

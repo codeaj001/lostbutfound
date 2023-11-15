@@ -1,0 +1,121 @@
+<!-- Code AJ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Item Details</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/details.css">
+</head>
+
+<body>
+	<header>
+
+		<div class="logoSec">
+			<div class="logo">LostButFound</div>
+			<!-- The responsive menu bar icon -->
+			<img src="../img/menuBarIcon.png" class="icn menuIcn" id="menuIcn" alt="menu-icon">
+		</div>
+
+		<div class="message">
+			    <a href="#"><img src= "../img/notIcon.png" class="icn" alt="Notifications"></a>
+			<!-- The profile which is also a link to the profile bar -->
+			<div class="dp">
+			    <a href="./profile.html"><img src= "../img/dpImage.png" class="dpIcn" alt="dp"></a>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+
+		<div class="navContainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					
+                    <a href="./dashboard.html" class="option-link">
+                        <div class="nav-option option1">   
+                            <h3>Dashboard</h3>	
+                        </div>
+                    </a>
+
+					<div class="line"></div>
+
+					<a href="./profile.html" class="option-link">
+                        <div class="nav-option option5">
+                            <h3>Profile &nbsp;<i class="fa fa-user-o" aria-hidden="true"></i></h3>
+                        </div>
+					</a>
+
+					<a href="./report.html" class="option-link">
+                        <div class="nav-option option3">
+                            <h3>Report &nbsp;<i class="fa fa-exclamation-circle" aria-hidden="true"></i></h3>
+                        </div>
+                    </a>
+
+                    <a href="" class="option-link">
+					<div class="nav-option option6">
+						<h3>Settings &nbsp;<i class="fa fa-cog" aria-hidden="true"></i></h3>
+					</div>
+                    </a>
+
+                    <a href="./login.html" class="option-link">
+					<div class="nav-option logout">
+						<h3>Logout &nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></h3>
+					</div>
+                    </a>
+
+				</div>
+			</nav>
+		</div>
+
+		<div class="main">
+
+
+			<div class="profile-container">
+
+				<div class="profile-header">
+                    <h3>Item Details</h3>
+					<img src="../img/coatofarm.jpg" alt="Profile Image">
+				</div>
+
+				<div class="profile-body">
+					
+					<section action="#">
+						<label for="itemName">Item Name</label><br>
+						<div id="itemName">Laptop Charger</div>
+
+						<label for="itemDescription">Item Description</label><br>
+						<div id="itemDescription">A black Toshiba laptop charger with a yellow pinpoint (mouth), and a two head charger, very small adapter, with a signature on it.</div>
+
+						<label for="contactEmail">Email/Mobile Number</label><br>
+						<div id="contactEmail">09191999991</div>
+
+						<label for="location">Location Found</label><br>
+						<div id="location">M.I.S</div>
+
+						<div class="button">
+							<button type="submit">Item Retrieved</button>
+						</div>
+						
+                    </section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script>
+        
+        let menuIcn = document.querySelector(".menuIcn");
+        let nav = document.querySelector(".navContainer");
+ 
+        menuIcn.addEventListener("click", () => {
+        nav.classList.toggle("navclose");
+        })
+    </script>
+</body>
+</html>
